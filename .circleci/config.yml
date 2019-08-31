@@ -3,14 +3,15 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+
+defaults:
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:10.16
+
 jobs:
-  build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/node:10.16
-
-    working_directory: ~/repo
-
+  test:
+    <<:
     steps:
       - checkout
 
@@ -33,8 +34,7 @@ jobs:
           root: ~/repo
           paths: .
   deploy:
-    machine:
-      enabled: true
+    <<:
     steps:
       - attach_workspace:
           at: ~/repo
@@ -49,7 +49,7 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build
+      - test
       - deploy:
           requires:
             - build
