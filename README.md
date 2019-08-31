@@ -20,3 +20,8 @@ Run on terminal
   - IPad 2048 x 2732
 
 ### Android not supported yet
+
+
+## Next steps
+- Functional Tests
+- Support for android
