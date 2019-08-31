@@ -1,0 +1,26 @@
+{
+  "name": "resizer-store",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "author": "otavioprimo<otavioprimo@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/otavioprimo/resizer"
+  },
+  "bin": {
+    "resizer-store": "./bin/resizer.js"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.js\""
+  },
+  "dependencies": {
+    "colors": "^1.3.3",
+    "prompts": "^2.2.1",
+    "sharp": "^0.23.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
