@@ -33,6 +33,8 @@ jobs:
           root: ~/repo
           paths: .
   deploy:
+    machine:
+      enabled: true
     steps:
       - attach_workspace:
           at: ~/repo
