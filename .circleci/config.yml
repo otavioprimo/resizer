@@ -11,7 +11,6 @@ defaults:
 
 jobs:
   test:
-    <<:
     steps:
       - checkout
 
@@ -34,7 +33,6 @@ jobs:
           root: ~/repo
           paths: .
   deploy:
-    <<:
     steps:
       - attach_workspace:
           at: ~/repo
