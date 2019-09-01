@@ -59,6 +59,13 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
+bdd-stdin@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/bdd-stdin/-/bdd-stdin-0.2.0.tgz#04e66aa480e0e0df861e288a4062fb8557db2441"
+  integrity sha1-BOZqpIDg4N+GHiiKQGL7hVfbJEE=
+  dependencies:
+    mock-stdin "0.3.0"
+
 bl@^1.0.0:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/bl/-/bl-1.2.2.tgz#a160911717103c07410cef63ef51b397c025af9c"
@@ -664,6 +671,11 @@ mocha@^6.2.0:
     yargs "13.2.2"
     yargs-parser "13.0.0"
     yargs-unparser "1.5.0"
+
+mock-stdin@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/mock-stdin/-/mock-stdin-0.3.0.tgz#f40d2a513a114e6d547480625b5ef5190744bd4d"
+  integrity sha1-9A0qUToRTm1UdIBiW171GQdEvU0=
 
 ms@2.1.1:
   version "2.1.1"

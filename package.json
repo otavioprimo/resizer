@@ -9,7 +9,7 @@
     "resizer-store": "./bin/resizer.js"
   },
   "scripts": {
-    "test": "mocha __test__/*.test.js",
+    "test": "mocha --timeout 5000 __test__/*.test.js",
     "format": "prettier --write \"**/*.js\""
   },
   "repository": {
@@ -26,6 +26,7 @@
     "sharp": "^0.23.0"
   },
   "devDependencies": {
+    "bdd-stdin": "^0.2.0",
     "chai": "^4.2.0",
     "mocha": "^6.2.0",
     "prettier": "^1.18.2"
