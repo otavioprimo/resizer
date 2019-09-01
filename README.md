@@ -26,6 +26,7 @@ On terminal, navigate to directory path and run
 
 
 ## Next steps
+- Eslint
 - Functional Tests
 - Support for android size
 - Bug, when close the terminal in the first question, the second question shows up

@@ -3,19 +3,23 @@
   "version": "1.0.0",
   "main": "./lib/index.js",
   "license": "MIT",
-  "author": "otavioprimo<otavioprimo@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/otavioprimo/resizer"
-  },
+  "author": "otavioprimo <otavioprimo@gmail.com>",
+  "preferGlobal": true,
   "bin": {
     "resizer-store": "./bin/resizer.js"
   },
-  "preferGlobal": true,
   "scripts": {
     "test": "mocha __test__/*.test.js",
     "format": "prettier --write \"**/*.js\""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/otavioprimo/resizer"
+  },
+  "bugs": {
+    "url": "https://github.com/otavioprimo/resizer/issues"
+  },
+  "homepage": "https://github.com/otavioprimo/resizer#readme",
   "dependencies": {
     "colors": "^1.3.3",
     "prompts": "^2.2.1",
