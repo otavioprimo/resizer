@@ -3,7 +3,10 @@
 - Resize and remove alpha channel from images
 
 ## Install
-`` npm install -g resizer-store ``
+``sudo npm install -g resizer-store ``
+
+If failed while installing Sharp, use
+``sudo npm install -g resizer-store --unsafe-perm``
 
 ## How to use
 
@@ -30,10 +33,3 @@ On terminal, navigate to directory path and run
 - Functional Tests
 - Support for android size
 - Bug, when close the terminal in the first question, the second question shows up
-
-
-| Dependencies |        |
-|:------------:| :----: |
-| sharp        | 0.23.0 |
-| prompts      | 2.2.1  |
-| colors       | 1.3.3  |
