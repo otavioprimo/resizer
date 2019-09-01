@@ -1,14 +1,17 @@
 # Image Resizer for App Store
 
+- Resize and remove alpha channel from images
+
 ## Install
 `` npm install -g resizer-store ``
 
 ## How to use
 
-Run on terminal
+On terminal, navigate to directory path and run
 `` resizer-store ``
 
 ## Features
+- Handle multiple images
 - Resize images
 - Remove alpha channel
 
@@ -24,4 +27,12 @@ Run on terminal
 
 ## Next steps
 - Functional Tests
-- Support for android
+- Support for android size
+- Bug, when close the terminal in the first question, the second question shows up
+
+
+| Dependencies |        |
+|:------------:| :----: |
+| sharp        | 0.23.0 |
+| prompts      | 2.2.1  |
+| colors       | 1.3.3  |
