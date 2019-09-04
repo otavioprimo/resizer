@@ -29,8 +29,6 @@ On terminal, navigate to directory path and run
   - Smartphone 1487 x 2644
   - Tablet 2048 x 2732
 
-### Android not supported yet
-
 
 ## Next steps
 - Eslint
