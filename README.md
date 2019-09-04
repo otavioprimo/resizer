@@ -22,8 +22,12 @@ On terminal, navigate to directory path and run
 - IOS
   - Icon 512 x 512
   - IPhone 6.5" 1242 x 2688
-  - IPhone 5.5" 1125 x 2436
+  - IPhone 5.5" 1242 x 2208
   - IPad 2048 x 2732
+  
+- Android
+  - Smartphone 1487 x 2644
+  - Tablet 2048 x 2732
 
 ### Android not supported yet
 
@@ -31,5 +35,4 @@ On terminal, navigate to directory path and run
 ## Next steps
 - Eslint
 - Functional Tests
-- Support for android size
 - Bug, when close the terminal in the first question, the second question shows up
