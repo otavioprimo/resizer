@@ -32,5 +32,5 @@ On terminal, navigate to directory path and run
 
 ## Next steps
 - Eslint
-- Test for custom sizes
+- Test for custom sizes and resize images
 - Bug, when close the terminal in the first question, the second question shows up
