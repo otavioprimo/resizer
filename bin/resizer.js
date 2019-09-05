@@ -8,7 +8,7 @@ const {
 } = require('../lib');
 
 askAndReturnWhichSize()
-  .then(createCopyDir)
   .then(askCustomWidthAndHeight)
   .then(askAndReturnImages)
+  .then(createCopyDir)
   .then(resizeAndRemoveAlphaChannel);

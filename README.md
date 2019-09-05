@@ -19,11 +19,11 @@ On terminal, navigate to directory path and run
 - Remove alpha channel
 
 ## Supported sizes
+- Icon 512 x 512
 - IOS
-  - Icon 512 x 512
-  - IPhone 6.5" 1242 x 2688
-  - IPhone 5.5" 1242 x 2208
-  - IPad 2048 x 2732
+  - iPhone 6.5" 1242 x 2688
+  - iPhone 5.5" 1242 x 2208
+  - iPad 2048 x 2732
   
 - Android
   - Smartphone 1487 x 2644
