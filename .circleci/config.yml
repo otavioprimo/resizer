@@ -52,12 +52,12 @@ workflows:
       - test:
           filters:
             tags:
-              only: /^v.*/
+              only: /^v*/
       - deploy:
           requires:
             - test
           filters:
               tags:
-                only: /^v.*/
+                only: /^v*/
               branches:
                 ignore: /.*/
