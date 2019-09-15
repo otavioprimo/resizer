@@ -34,3 +34,5 @@ On terminal, navigate to directory path and run
 - Eslint
 - Test for custom sizes and resize images
 - Bug, when close the terminal in the first question, the second question shows up
+
+[![DeepScan grade](https://deepscan.io/api/teams/5435/projects/7225/branches/69159/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5435&pid=7225&bid=69159)
