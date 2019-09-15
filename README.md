@@ -19,17 +19,20 @@ On terminal, navigate to directory path and run
 - Remove alpha channel
 
 ## Supported sizes
+- Icon 512 x 512
 - IOS
-  - Icon 512 x 512
-  - IPhone 6.5" 1242 x 2688
-  - IPhone 5.5" 1125 x 2436
-  - IPad 2048 x 2732
-
-### Android not supported yet
+  - iPhone 6.5" 1242 x 2688
+  - iPhone 5.5" 1242 x 2208
+  - iPad 2048 x 2732
+  
+- Android
+  - Smartphone 1487 x 2644
+  - Tablet 2048 x 2732
 
 
 ## Next steps
 - Eslint
-- Functional Tests
-- Support for android size
+- Test for custom sizes and resize images
 - Bug, when close the terminal in the first question, the second question shows up
+
+[![DeepScan grade](https://deepscan.io/api/teams/5435/projects/7225/branches/69159/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5435&pid=7225&bid=69159)
