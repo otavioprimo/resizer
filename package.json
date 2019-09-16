@@ -23,7 +23,7 @@
   "homepage": "https://github.com/otavioprimo/resizer#readme",
   "lint-staged": {
     "*.js": [
-      "npm run pretty",
+      "npm run format",
       "git add"
     ]
   },
