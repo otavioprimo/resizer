@@ -4,7 +4,7 @@ const {
   askAndReturnImages,
   askAndReturnWhichSize,
   resizeAndRemoveAlphaChannel,
-  askCustomWidthAndHeight
+  askCustomWidthAndHeight,
 } = require('../lib');
 
 askAndReturnWhichSize()
