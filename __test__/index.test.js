@@ -7,7 +7,7 @@ const resizer = require('../lib');
 const assert = chai.assert;
 
 describe('CLI user interactions', () => {
-  it('Select Icon 512 x 512', (done) => {
+  it('Select Icon 512 x 512', done => {
     bddStdin(bddStdin.keys.down, '\n');
     resizer.askAndReturnWhichSize().then(data => {
       assert.equal(data.width, 512);
@@ -16,7 +16,7 @@ describe('CLI user interactions', () => {
     });
   });
 
-  it('Select Iphone 6.5"', (done) => {
+  it('Select Iphone 6.5"', done => {
     bddStdin(bddStdin.keys.down, bddStdin.keys.down, '\n');
     resizer.askAndReturnWhichSize().then(data => {
       assert.equal(data.width, 1242);
@@ -25,7 +25,7 @@ describe('CLI user interactions', () => {
     });
   });
 
-  it('Select Iphone 5.5"', (done) => {
+  it('Select Iphone 5.5"', done => {
     bddStdin(bddStdin.keys.down, bddStdin.keys.down, bddStdin.keys.down, '\n');
     resizer.askAndReturnWhichSize().then(data => {
       assert.equal(data.width, 1242);
@@ -34,7 +34,7 @@ describe('CLI user interactions', () => {
     });
   });
 
-  it('Select iPad', (done) => {
+  it('Select iPad', done => {
     bddStdin(
       bddStdin.keys.down,
       bddStdin.keys.down,
@@ -49,7 +49,7 @@ describe('CLI user interactions', () => {
     });
   });
 
-  it('Select Android Smartphone', (done) => {
+  it('Select Android Smartphone', done => {
     bddStdin(
       bddStdin.keys.down,
       bddStdin.keys.down,
@@ -65,7 +65,7 @@ describe('CLI user interactions', () => {
     });
   });
 
-  it('Select Android Smartphone', (done) => {
+  it('Select Android Smartphone', done => {
     bddStdin(
       bddStdin.keys.down,
       bddStdin.keys.down,
@@ -75,7 +75,7 @@ describe('CLI user interactions', () => {
       bddStdin.keys.down,
       '\n',
     );
-    resizer.askAndReturnWhichSize().then((data) => {
+    resizer.askAndReturnWhichSize().then(data => {
       assert.equal(data.width, 2048);
       assert.equal(data.height, 2732);
       done();
@@ -83,7 +83,7 @@ describe('CLI user interactions', () => {
   });
 
   describe('Create Directory', () => {
-    it('Should create "resized directory"', (done) => {
+    it('Should create "resized directory"', done => {
       resizer.createCopyDir({}).then(() => {
         if (fs.existsSync('./resized')) done();
       });
@@ -91,7 +91,7 @@ describe('CLI user interactions', () => {
   });
 
   describe('Resize Image Preview', () => {
-    it('Should resize Icon to 512x512', (done) => {
+    it('Should resize Icon to 512x512', done => {
       const content = {
         width: 512,
         height: 512,
@@ -108,7 +108,7 @@ describe('CLI user interactions', () => {
       });
     });
 
-    it('Should resize image to 600x900', (done) => {
+    it('Should resize image to 600x900', done => {
       const content = {
         width: 600,
         height: 900,

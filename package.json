@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "mocha --timeout 5000 __test__/*.test.js",
-    "format": "prettier --write \"**/*.js\""
+    "format": "prettier --write \"**/*.js\"",
+    "precommit": "lint-staged && npm test"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,12 @@
     "url": "https://github.com/otavioprimo/resizer/issues"
   },
   "homepage": "https://github.com/otavioprimo/resizer#readme",
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "git add"
+    ]
+  },
   "dependencies": {
     "colors": "^1.3.3",
     "prompts": "^2.2.1",
@@ -28,6 +35,8 @@
   "devDependencies": {
     "bdd-stdin": "^0.2.0",
     "chai": "^4.2.0",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
     "mocha": "^6.2.0",
     "prettier": "^1.18.2"
   }
