@@ -1,6 +1,6 @@
 {
   "name": "resizer-store",
-  "version": "1.0.48",
+  "version": "1.0.49",
   "main": "./lib/index.js",
   "license": "MIT",
   "author": "otavioprimo <otavioprimo@gmail.com>",
