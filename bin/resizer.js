@@ -11,4 +11,8 @@ askAndReturnWhichSize()
   .then(askCustomWidthAndHeight)
   .then(askAndReturnImages)
   .then(createCopyDir)
-  .then(resizeAndRemoveAlphaChannel);
+  .then(resizeAndRemoveAlphaChannel)
+  .catch(error => {
+    console.error(error);
+    process.exit();
+  });
