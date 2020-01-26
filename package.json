@@ -10,8 +10,7 @@
   },
   "scripts": {
     "test": "mocha --timeout 5000 __test__/*.test.js",
-    "format": "prettier --write \"**/*.js\"",
-    "precommit": "lint-staged && npm test"
+    "format": "prettier --write \"**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -39,5 +38,10 @@
     "lint-staged": "^9.2.5",
     "mocha": "^6.2.0",
     "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
   }
 }
